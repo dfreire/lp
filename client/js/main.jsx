@@ -7,10 +7,10 @@ import Home from './home.jsx';
 var RootPane = React.createClass({
     render: function() {
         return (
-            <div style={{fontFamily: "Verdana", width: "900px"}} className="container">
+            <div style={{fontFamily: "Verdana", width: "950px"}} className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <h1 style={{marginTop: "10px", fontWeight: "normal", fontSize: "16px"}}>LUÍS PALMA</h1>
+                        <h1 style={{marginTop: "10px", fontWeight: "normal", fontSize: "18px"}}>LUÍS PALMA</h1>
                     </div>
                 </div>
                 <div className="row">
@@ -26,7 +26,7 @@ var RootPane = React.createClass({
                         </ul>
                     </div>
                     <div className="col-md-10">
-                            <RouteHandler/>
+                        <RouteHandler/>
                     </div>
                 </div>
             </div>
