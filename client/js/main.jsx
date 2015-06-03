@@ -4,6 +4,16 @@ import { DefaultRoute, Link, NotFoundRoute, Redirect , Route, RouteHandler} from
 
 import Home from './home.jsx';
 
+var routeList = [
+{name: "home",      path: "/home",      title: "HOME PAGE", handler: Home},
+{name: "biografia", path: "/biografia", title: "BIOGRAFIA"},
+{name: "projetos",  path: "/projetos",  title: "PROJETOS"},
+{name: "textos",    path: "/textos",    title: "TEXTOS"},
+{name: "edicoes",   path: "/edicoes",   title: "EDIÇÕES"},
+{name: "colecoes",  path: "/colecoes",  title: "COLEÇÕES"},
+{name: "contactos", path: "/contactos", title: "CONTACTOS"}
+];
+
 var RootPane = React.createClass({
     render: function() {
         return (
@@ -13,16 +23,12 @@ var RootPane = React.createClass({
                         <h1 style={{marginTop: "10px", fontWeight: "normal", fontSize: "18px"}}>LUÍS PALMA</h1>
                     </div>
                 </div>
-                <div className="row">
+                <div style={{marginTop: "60px"}} className="row">
                     <div className="col-md-2">
-                        <ul style={{marginTop: "30px", listStyleType: "none", fontSize: "11px", paddingLeft: 0}}>
-                            <li style={{marginTop: "0px", paddingTop: "0px", marginBottom: "30px"}}>HOME PAGE</li>
-                            <li style={{marginBottom: "30px"}}>BIOGRAFIA</li>
-                            <li style={{marginBottom: "30px"}}>PROJETOS</li>
-                            <li style={{marginBottom: "30px"}}>TEXTOS</li>
-                            <li style={{marginBottom: "30px"}}>EDIÇÕES</li>
-                            <li style={{marginBottom: "30px"}}>COLEÇÕES</li>
-                            <li style={{marginBottom: "30px"}}>CONTACTOS</li>
+                        <ul style={{listStyleType: "none", fontSize: "11px", paddingLeft: 0}}>
+                            {routeList.map(function(route, i) {
+                                return (<li style={{marginBottom: "30px"}} key={route.name}>{route.title}</li>);
+                            })}
                         </ul>
                     </div>
                     <div className="col-md-10">
