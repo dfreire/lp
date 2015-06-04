@@ -42,9 +42,11 @@ var RootPane = React.createClass({
 
 var routes = (
     <Route handler={RootPane} path="/">
-        <Redirect from="/"      to="/home" />
-        <Redirect from="/home/" to="/home" />
-        <Route name="home" path="/home" handler={Home} />
+        <Redirect from="/" to="/home" />
+        {routeList.map(function(route, i) {
+            return (<Route name={route.name} path={route.path} handler={route.handler} />);
+        })}
+        <Redirect from="/home/" to="/home" />;
     </Route>
 );
 
