@@ -46,7 +46,11 @@ var routes = (
         {routeList.map(function(route, i) {
             return (<Route name={route.name} path={route.path} handler={route.handler} />);
         })}
-        <Redirect from="/home/" to="/home" />;
+        {routeList.map(function(route, i) {
+            var routeFrom = route.path + "/";
+            return (<Redirect from={routeFrom} to={route.path} />);
+        })}
+
     </Route>
 );
 
