@@ -50,7 +50,6 @@ var routes = (
             var routeFrom = route.path + "/";
             return (<Redirect from={routeFrom} to={route.path} />);
         })}
-
     </Route>
 );
 
