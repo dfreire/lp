@@ -5,13 +5,13 @@ import { DefaultRoute, Link, NotFoundRoute, Redirect , Route, RouteHandler} from
 import Home from './home.jsx';
 
 var routeList = [
-{name: "home",      path: "/home",      title: "HOME PAGE", handler: Home},
+{name: "home",      path: "/home",      title: "HOME PAGE", handler: Home}/*,
 {name: "biografia", path: "/biografia", title: "BIOGRAFIA"},
 {name: "projetos",  path: "/projetos",  title: "PROJETOS"},
 {name: "textos",    path: "/textos",    title: "TEXTOS"},
 {name: "edicoes",   path: "/edicoes",   title: "EDIÇÕES"},
 {name: "colecoes",  path: "/colecoes",  title: "COLEÇÕES"},
-{name: "contactos", path: "/contactos", title: "CONTACTOS"}
+{name: "contactos", path: "/contactos", title: "CONTACTOS"}*/
 ];
 
 var RootPane = React.createClass({
