@@ -3,15 +3,21 @@ import Router from "react-router";
 import { DefaultRoute, Link, NotFoundRoute, Redirect , Route, RouteHandler} from 'react-router';
 
 import Home from './home.jsx';
+import Bio from './bio.jsx';
+import Projects from './projects.jsx';
+import Texts from './texts.jsx';
+import Editions from './editions.jsx';
+import Collections from './collections.jsx';
+import Contacts from './contacts.jsx';
 
 var routeList = [
     { name: "home",      path: "/home",      title: "HOME PAGE", handler: Home },
-    { name: "biografia", path: "/biografia", title: "BIOGRAFIA"},
-    { name: "projetos",  path: "/projetos",  title: "PROJETOS"},
-    { name: "textos",    path: "/textos",    title: "TEXTOS"},
-    { name: "edicoes",   path: "/edicoes",   title: "EDIÇÕES"},
-    { name: "colecoes",  path: "/colecoes",  title: "COLEÇÕES"},
-    { name: "contactos", path: "/contactos", title: "CONTACTOS"}
+    { name: "biografia", path: "/biografia", title: "BIOGRAFIA", handler: Bio },
+    { name: "projetos",  path: "/projetos",  title: "PROJETOS",  handler: Projects },
+    { name: "textos",    path: "/textos",    title: "TEXTOS",    handler: Texts },
+    { name: "edicoes",   path: "/edicoes",   title: "EDIÇÕES",   handler: Editions },
+    { name: "colecoes",  path: "/colecoes",  title: "COLEÇÕES",  handler: Collections },
+    { name: "contactos", path: "/contactos", title: "CONTACTOS", handler: Contacts }
 ];
 
 var RootPane = React.createClass({
