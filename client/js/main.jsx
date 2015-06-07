@@ -5,13 +5,13 @@ import { DefaultRoute, Link, NotFoundRoute, Redirect , Route, RouteHandler} from
 import Home from './home.jsx';
 
 var routeList = [
-{name: "home",      path: "/home",      title: "HOME PAGE", handler: Home}/*,
-{name: "biografia", path: "/biografia", title: "BIOGRAFIA"},
-{name: "projetos",  path: "/projetos",  title: "PROJETOS"},
-{name: "textos",    path: "/textos",    title: "TEXTOS"},
-{name: "edicoes",   path: "/edicoes",   title: "EDIÇÕES"},
-{name: "colecoes",  path: "/colecoes",  title: "COLEÇÕES"},
-{name: "contactos", path: "/contactos", title: "CONTACTOS"}*/
+    { name: "home",      path: "/home",      title: "HOME PAGE", handler: Home },
+    { name: "biografia", path: "/biografia", title: "BIOGRAFIA"},
+    { name: "projetos",  path: "/projetos",  title: "PROJETOS"},
+    { name: "textos",    path: "/textos",    title: "TEXTOS"},
+    { name: "edicoes",   path: "/edicoes",   title: "EDIÇÕES"},
+    { name: "colecoes",  path: "/colecoes",  title: "COLEÇÕES"},
+    { name: "contactos", path: "/contactos", title: "CONTACTOS"}
 ];
 
 var RootPane = React.createClass({
@@ -44,11 +44,12 @@ var routes = (
     <Route handler={RootPane} path="/">
         <Redirect from="/" to="/home" />
         {routeList.map(function(route, i) {
-            return (<Route name={route.name} path={route.path} handler={route.handler} />);
+            return (<Route key={route.name} name={route.name} path={route.path} handler={route.handler} />);
         })}
         {routeList.map(function(route, i) {
             var routeFrom = route.path + "/";
-            return (<Redirect from={routeFrom} to={route.path} />);
+            var key = route.name + "_key";
+            return (<Redirect key={key} from={routeFrom} to={route.path} />);
         })}
     </Route>
 );
