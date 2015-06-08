@@ -5,8 +5,20 @@ import (
 )
 
 func main() {
+	urls := []string{
+		"/home",
+		"/biografia",
+		"/projectos",
+		"/textos",
+		"/edicoes",
+		"/colecoes",
+		"/contactos",
+	}
+
 	e := echo.New()
 	e.Static("/", "public")
-	e.ServeFile("/home", "public/index.html")
+	for _, url := range urls {
+		e.ServeFile(url, "public/index.html")
+	}
 	e.Run(":3000")
 }

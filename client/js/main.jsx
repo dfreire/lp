@@ -33,7 +33,11 @@ var RootPane = React.createClass({
                     <div className="col-md-2">
                         <ul style={{listStyleType: "none", fontSize: "11px", paddingLeft: 0}}>
                             {routeList.map(function(route, i) {
-                                return (<li style={{marginBottom: "30px"}} key={route.name}>{route.title}</li>);
+                                return (
+                                    <li style={{marginBottom: "30px"}} key={route.name}>
+                                        <Link to={route.path}>{route.title}</Link>
+                                    </li>
+                                );
                             })}
                         </ul>
                     </div>
