@@ -13,12 +13,12 @@ export default React.createClass({
                 i = 0;
             }
 
-            $('#homeImg').fadeOut(500, function() {
+            $('#homeImg').fadeOut(1500, function() {
                 console.log("go go go", img);
                 $('#homeImg').attr("src", img);
-                $('#homeImg').fadeIn(500);
+                $('#homeImg').fadeIn(1500);
             });
-        }, 2000);
+        }, 4000);
     },
 
     render: function() {
@@ -26,7 +26,7 @@ export default React.createClass({
             <div className="row">
                 <div className="col-md-12">
                     <div>
-                        <img id="homeImg1" style={{width: "100%"}} src="/img/LP-OCUPACAO.jpg" />
+                        <img id="homeImg" style={{width: "100%"}} src="/img/LP-OCUPACAO.jpg" />
                     </div>
                 </div>
             </div>
