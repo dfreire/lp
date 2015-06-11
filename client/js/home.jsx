@@ -5,27 +5,35 @@ export default React.createClass({
     mixins: [Router.State],
 
     componentDidMount: function() {
-        // http://stackoverflow.com/questions/21100191/css-background-image-changing-with-animation
-
-        // "/img/LP-OCCUPATION.jpg"
-        // setInterval(function(){
-        //     $('#homeImg1').fadeOut(1500);
-        //     $('#homeImg2').fadeIn(1500);
-        // }, 4000);
+        var b = true;
+        setInterval(function(){
+            if (b) {
+                $('#home-img').fadeOut(1650);
+                b = false;
+            } else {
+                $('#home-img').fadeIn(1650);
+                b = true;
+            }
+        }, 5000);
     },
 
     render: function() {
         var divStyle = {
-            height: "600px",
             backgroundImage: "url('/img/LP-OCUPACAO.jpg')",
+            backgroundRepeat: "no-repeat",
             backgroundSize: "100%",
-            backgroundRepeat: "no-repeat"
+            height: "600px"
+        };
+
+        var imgStyle = {
+            width: "100%"
         };
 
         return (
             <div className="row">
                 <div className="col-md-12">
                     <div style={divStyle}>
+                        <img id="home-img" style={imgStyle} src="/img/LP-OCCUPATION.jpg" />
                     </div>
                 </div>
             </div>
