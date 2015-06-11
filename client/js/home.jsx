@@ -6,7 +6,7 @@ export default React.createClass({
 
     componentDidMount: function() {
         // http://stackoverflow.com/questions/21100191/css-background-image-changing-with-animation
-        
+
         // "/img/LP-OCCUPATION.jpg"
         // setInterval(function(){
         //     $('#homeImg1').fadeOut(1500);
@@ -15,10 +15,17 @@ export default React.createClass({
     },
 
     render: function() {
+        var divStyle = {
+            height: "600px",
+            backgroundImage: "url('/img/LP-OCUPACAO.jpg')",
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat"
+        };
+
         return (
             <div className="row">
                 <div className="col-md-12">
-                    <div style={{height: "600px", backgroundImage: "url('/img/LP-OCUPACAO.jpg')", backgroundSize: "100%", backgroundRepeat: "no-repeat"}}>
+                    <div style={divStyle}>
                     </div>
                 </div>
             </div>
