@@ -8,7 +8,7 @@ func main() {
 	urls := []string{
 		"/home",
 		"/biografia",
-		"/projectos",
+		"/projetos",
 		"/textos",
 		"/edicoes",
 		"/colecoes",
