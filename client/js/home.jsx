@@ -19,7 +19,7 @@ export default React.createClass({
 
     render: function() {
         var divStyle = {
-            backgroundImage: "url('/img/LP-OCUPACAO.jpg')",
+            backgroundImage: "url('/img/home/LP-OCUPACAO.jpg')",
             backgroundRepeat: "no-repeat",
             backgroundSize: "100%",
             height: "600px"
@@ -33,7 +33,7 @@ export default React.createClass({
             <div className="row">
                 <div className="col-md-12">
                     <div style={divStyle}>
-                        <img id="home-img" style={imgStyle} src="/img/LP-OCCUPATION.jpg" />
+                        <img id="home-img" style={imgStyle} src="/img/home/LP-OCCUPATION.jpg" />
                     </div>
                 </div>
             </div>
