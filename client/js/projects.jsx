@@ -9,29 +9,29 @@ export default React.createClass({
             <div className="row">
                 <div className="col-md-4">
                     <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/tm-c05dd.jpg" />
+                        <img style={{width: "100%"}} src="/img/projects/tm-c05dd.jpg" />
                     </div>
                     <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/tm-d452d.jpg" />
-                    </div>
-                </div>
-                <div className="col-md-4">
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/6.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/L1040611.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/tm-3b09a.jpg" />
+                        <img style={{width: "100%"}} src="/img/projects/tm-d452d.jpg" />
                     </div>
                 </div>
                 <div className="col-md-4">
                     <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/tm-dfd2b.jpg" />
+                        <img style={{width: "100%"}} src="/img/projects/6.jpg" />
                     </div>
                     <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/tm-c70b2.jpg" />
+                        <img style={{width: "100%"}} src="/img/projects/L1040611.jpg" />
+                    </div>
+                    <div style={{marginBottom: "30px"}}>
+                        <img style={{width: "100%"}} src="/img/projects/tm-3b09a.jpg" />
+                    </div>
+                </div>
+                <div className="col-md-4">
+                    <div style={{marginBottom: "30px"}}>
+                        <img style={{width: "100%"}} src="/img/projects/tm-dfd2b.jpg" />
+                    </div>
+                    <div style={{marginBottom: "30px"}}>
+                        <img style={{width: "100%"}} src="/img/projects/tm-c70b2.jpg" />
                     </div>
                 </div>
             </div>
