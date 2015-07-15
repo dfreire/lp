@@ -5,6 +5,6 @@ export default React.createClass({
     mixins: [Router.State],
 
     render: function() {
-        return (<h1>Contacts</h1>);
+        return (<h1></h1>);
     }
 });
