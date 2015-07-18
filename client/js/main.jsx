@@ -1,3 +1,4 @@
+import "../css/main.css";
 import React from "react/addons";
 import Router from "react-router";
 import { DefaultRoute, Link, NotFoundRoute, Redirect , Route, RouteHandler} from 'react-router';
