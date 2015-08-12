@@ -12,6 +12,7 @@ func main() {
 		"/textos",
 		"/edicoes",
 		"/colecoes",
+		"/video",
 		"/contactos",
 	}
 

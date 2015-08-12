@@ -9,6 +9,7 @@ import Projects from './projects.jsx';
 import Texts from './texts.jsx';
 import Editions from './editions.jsx';
 import Collections from './collections.jsx';
+import Video from './video.jsx';
 import Contacts from './contacts.jsx';
 
 var routeList = [
@@ -18,6 +19,7 @@ var routeList = [
     { name: "textos",    path: "/textos",    title: "TEXTOS",    handler: Texts },
     { name: "edicoes",   path: "/edicoes",   title: "EDIÇÕES",   handler: Editions },
     { name: "colecoes",  path: "/colecoes",  title: "COLEÇÕES",  handler: Collections },
+    { name: "video",     path: "/video",     title: "VÍDEO",     handler: Video },
     { name: "contactos", path: "/contactos", title: "CONTACTOS", handler: Contacts }
 ];
 
