@@ -8,7 +8,9 @@ export default React.createClass({
 
     render: function() {
         return (
-            <h1>Video</h1>
+            <iframe title="YouTube video player" class="youtube-player" type="text/html"
+width="640" height="390" src="http://www.youtube.com/embed/_oeOwE-xlXQ"
+frameborder="0" allowFullScreen></iframe>
         );
     }
 });
