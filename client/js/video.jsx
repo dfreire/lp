@@ -8,9 +8,12 @@ export default React.createClass({
 
     render: function() {
         return (
-            <iframe title="YouTube video player" class="youtube-player" type="text/html"
-width="640" height="390" src="http://www.youtube.com/embed/_oeOwE-xlXQ"
-frameborder="0" allowFullScreen></iframe>
+            <iframe style={{border: 0}}
+                className="youtube-player" type="text/html"
+                width="790" height="444"
+                src="http://www.youtube.com/embed/_oeOwE-xlXQ"
+                frameborder="0"
+                allowFullScreen></iframe>
         );
     }
 });
