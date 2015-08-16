@@ -13,7 +13,6 @@ func main() {
 		"/edicoes",
 		"/colecoes",
 		"/video",
-		"/contactos",
 	}
 
 	e := echo.New()
