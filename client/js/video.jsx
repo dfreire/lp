@@ -3,7 +3,6 @@
 // width="560" height="349"
 // https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
 
-
 import React from "react/addons";
 import Router from "react-router";
 

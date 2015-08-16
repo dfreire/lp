@@ -19,8 +19,7 @@ var routeList = [
     { name: "textos",    path: "/textos",    title: "TEXTOS",    handler: Texts },
     { name: "edicoes",   path: "/edicoes",   title: "EDIÇÕES",   handler: Editions },
     { name: "colecoes",  path: "/colecoes",  title: "COLEÇÕES",  handler: Collections },
-    { name: "video",     path: "/video",     title: "VÍDEO",     handler: Video },
-    { name: "contactos", path: "/contactos", title: "CONTACTOS", handler: Contacts }
+    { name: "video",     path: "/video",     title: "VÍDEO",     handler: Video }
 ];
 
 var RootPane = React.createClass({
@@ -42,7 +41,9 @@ var RootPane = React.createClass({
                                     </li>
                                 );
                             })}
+                            <li><a href="mailto:lp.luispalma@gmail.com">E-Mail</a></li>
                         </ul>
+                        <p style={{marginTop: "40px", fontWeight: "normal", fontSize: "11px"}}>© LUÍS PALMA</p>
                     </div>
                     <div className="col-md-10">
                         <RouteHandler/>
