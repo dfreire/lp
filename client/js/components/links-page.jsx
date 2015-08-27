@@ -10,10 +10,9 @@ export default React.createClass({
         };
         return (
             <ul style={{listStyleType: "none", fontSize: "11px", paddingLeft: 0}}>
-                <li style={liStyle}>Ocupação</li>
-                <li style={liStyle}>Anatomia de um Sonho</li>
-                <li style={liStyle}>Mapeamento, Memória, Política</li>
-                <li style={liStyle}>From East to West</li>
+                {this.props.links.map((link) => {
+                    return (<li style={liStyle}><a href={link.href}>{link.caption}</a></li>);
+                })}
             </ul>
         );
     }
