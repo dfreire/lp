@@ -14,8 +14,8 @@ export default React.createClass({
         };
         return (
             <div style={style}>
-                {this.props.paragraphs.map((paragraph) => {
-                    return (<p>{paragraph}</p>);
+                {this.props.paragraphs.map((paragraph, i) => {
+                    return (<p key={i}>{paragraph}</p>);
                 })}
             </div>
         );
