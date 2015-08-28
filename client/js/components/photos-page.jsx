@@ -9,53 +9,23 @@ export default React.createClass({
             <div className="row">
                 <div className="col-md-4">
                     <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/tm-c05dd.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/tm-d452d.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/tm-dfd2b.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/tm-c70b2.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/6.jpg" />
+                        {this.props.col1.map((photo) => {
+                            return (<img style={{width: "100%"}} src={photo.src} />);
+                        })}
                     </div>
                 </div>
                 <div className="col-md-4">
                     <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/6.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/L1040611.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/tm-3b09a.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/tm-c05dd.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/tm-d452d.jpg" />
+                        {this.props.col2.map((photo) => {
+                            return (<img style={{width: "100%"}} src={photo.src} />);
+                        })}
                     </div>
                 </div>
                 <div className="col-md-4">
                     <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/tm-dfd2b.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/tm-c70b2.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/6.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/L1040611.jpg" />
-                    </div>
-                    <div style={{marginBottom: "30px"}}>
-                        <img style={{width: "100%"}} src="/img/projects/tm-3b09a.jpg" />
+                        {this.props.col3.map((photo) => {
+                            return (<img style={{width: "100%"}} src={photo.src} />);
+                        })}
                     </div>
                 </div>
             </div>
