@@ -13,9 +13,11 @@ export default React.createClass({
             textAlign: "justify"
         };
         return (
-            {this.props.paragraphs.map((text) => {
-                <p style={style}>{text}</p>
-            })}
+            <div style={style}>
+                {this.props.paragraphs.map((paragraph) => {
+                    return (<p>{paragraph}</p>);
+                })}
+            </div>
         );
     }
 });
