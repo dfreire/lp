@@ -41,7 +41,7 @@ var RootPane = React.createClass({
                                     </li>
                                 );
                             })}
-                            <li><a href="mailto:lp.luispalma@gmail.com">E-Mail</a></li>
+                            <li><a href="mailto:lp.luispalma@gmail.com">CONTACTO</a></li>
                         </ul>
                         <p style={{marginTop: "40px", fontWeight: "normal", fontSize: "11px"}}>© LUÍS PALMA</p>
                     </div>
