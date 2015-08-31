@@ -21,6 +21,15 @@ var routeList = [
     { name: "colecoes",  path: "/colecoes",  title: "COLEÇÕES",  handler: Collections },
     { name: "video",     path: "/video",     title: "VÍDEO",     handler: Video }
 ];
+// textos/paisagens-perifericas-memoria-e-recordacao
+// textos/Bascos
+// textos/paisagem-industria-memoria
+// textos/silentes
+// textos/territorialidade
+// textos/factos-e-ficcoes-a-proposito-de-territorialidade
+// textos/um-dialogo-com-antonio-soares-a-proposito-de-ocupacao
+// textos/sobre-a-fotografia-da-estacao-internacional-de-canfranc
+// textos/dar-a-ver-as-cicatrizes-da-historia
 
 var RootPane = React.createClass({
     render: function() {
