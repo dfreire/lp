@@ -22,7 +22,7 @@ var routeList = [
     { name: "video",     path: "/video",     title: "VÍDEO",     handler: Video }
 ];
 // textos/paisagens-perifericas-memoria-e-recordacao
-// textos/Bascos
+// textos/bascos
 // textos/paisagem-industria-memoria
 // textos/silentes
 // textos/territorialidade
